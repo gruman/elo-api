@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buy a Joke</title>
+  <meta
+    name="description"
+    content="Filler texts for websites and print projects"
+  />
+
+  <link rel="stylesheet" href="/css/styles.css">
+  <meta name="keywords" content="random, api, node, express, ejs, lorem, ipsum, pickup, lines">
+
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="/img/horsie.png" alt="Knight chess piece / horsie" />
+      <div>
+  <h1>Elo API</h1>
+    <p>by <a href="https://gruman.co">Matthew Gruman</a></p>
+  </div>
+  </header>
+  <p>This API calculates elo, for games like backgammon and chess. To use it send a GET request to:</p>
+  <code>
+    https://elo-api.vercel.app/:winner/:loser/:match length (optional)
+  </code>
+  <h2>Browser example</h2>
+  <p>Visit the following URL in your browser. The first number is the winner's elo, the second is the loser's elo, and the third (optional) is the game length.</p>
+  <input type="text" value="https://elo-api.vercel.app/1400/1777/5" />
+  <h2>Example with React and Axios</h2>
+  <code>
+    axios.get("https://elo-api.vercel.com/1392/1854/7")
+    .then(results => {
+      const elos = results.data;
+    })
+    .err(err => {
+      console.log(err)
+    })
+  </code>
+   </div>
+</body>
+<script>
+</script>
+</html>
